@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">亮度和 HDR</title>
+  <desc id="desc">用明暗层次和 HDR 标签说明支持 HDR 不等于 HDR 效果好。</desc>
+  <rect width="960" height="540" fill="#0f172a"/>
+  <rect x="74" y="74" width="812" height="392" rx="30" fill="#111827" stroke="#e5e7eb" stroke-width="4"/>
+  <defs>
+    <linearGradient id="tone" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#020617"/>
+      <stop offset=".45" stop-color="#475569"/>
+      <stop offset="1" stop-color="#fef3c7"/>
+    </linearGradient>
+  </defs>
+  <rect x="128" y="152" width="520" height="170" rx="18" fill="url(#tone)"/>
+  <circle cx="590" cy="190" r="48" fill="#fde68a"/>
+  <circle cx="590" cy="190" r="84" fill="#facc15" opacity=".22"/>
+  <rect x="686" y="152" width="126" height="170" rx="18" fill="#1f2937" stroke="#f59e0b" stroke-width="3"/>
+  <text x="749" y="222" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#fbbf24">HDR</text>
+  <text x="749" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" fill="#e5e7eb">不只看支持</text>
+  <text x="480" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#ffffff">好 HDR = 亮度、黑位、对比度、控光一起够</text>
+  <text x="480" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" fill="#cbd5e1">普通办公先把基础画质选对</text>
+</svg>
