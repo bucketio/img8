@@ -1,0 +1,19 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">电脑变卡排查顺序</title>
+  <desc id="desc">电脑变卡时先检查自启、空间、软件、任务管理器和散热，再考虑重装或升级</desc>
+  <rect width="1200" height="720" fill="#f8fafc"/>
+  <g font-family="Arial, 'Microsoft YaHei', sans-serif">
+    <text x="70" y="84" fill="#111827" font-size="42" font-weight="700">别急着重装，先按顺序排查</text>
+    <text x="72" y="130" fill="#475569" font-size="24">从最容易处理的地方开始，成本更低，也更容易定位问题</text>
+    <g transform="translate(110 205)">
+      <rect width="980" height="410" rx="24" fill="#ffffff" stroke="#d1d5db"/>
+      <g font-size="27" fill="#111827">
+        <circle cx="80" cy="80" r="30" fill="#2563eb"/><text x="80" y="90" text-anchor="middle" fill="#ffffff" font-weight="700">1</text><text x="135" y="90">关掉不必要的开机自启</text>
+        <circle cx="80" cy="150" r="30" fill="#0f766e"/><text x="80" y="160" text-anchor="middle" fill="#ffffff" font-weight="700">2</text><text x="135" y="160">给系统盘留出足够空间</text>
+        <circle cx="80" cy="220" r="30" fill="#7c3aed"/><text x="80" y="230" text-anchor="middle" fill="#ffffff" font-weight="700">3</text><text x="135" y="230">卸载长期不用和重复的软件</text>
+        <circle cx="80" cy="290" r="30" fill="#d97706"/><text x="80" y="300" text-anchor="middle" fill="#ffffff" font-weight="700">4</text><text x="135" y="300">看任务管理器里的 CPU、内存、磁盘占用</text>
+        <circle cx="80" cy="360" r="30" fill="#dc2626"/><text x="80" y="370" text-anchor="middle" fill="#ffffff" font-weight="700">5</text><text x="135" y="370">关注温度、风扇和出风口</text>
+      </g>
+    </g>
+  </g>
+</svg>
