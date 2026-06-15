@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420" role="img" aria-labelledby="title desc">
+  <title id="title">机械硬盘到固态硬盘提升明显</title>
+  <desc id="desc">从机械硬盘到固态硬盘的体验提升最大</desc>
+  <rect width="900" height="420" fill="#f7f5ee"/>
+  <text x="450" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#111827">最明显的提升：机械硬盘换固态</text>
+  <rect x="86" y="128" width="210" height="174" rx="18" fill="#ffffff" stroke="#475569" stroke-width="3"/>
+  <circle cx="191" cy="215" r="58" fill="#e5e7eb" stroke="#475569" stroke-width="5"/>
+  <circle cx="191" cy="215" r="16" fill="#94a3b8"/>
+  <text x="191" y="344" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#334155">机械硬盘</text>
+  <path d="M332 216 h186" stroke="#0f766e" stroke-width="16" stroke-linecap="round"/>
+  <path d="M518 216 l-34 -24 v48z" fill="#0f766e"/>
+  <text x="425" y="188" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#0f766e">跨代升级</text>
+  <rect x="602" y="144" width="212" height="140" rx="18" fill="#1f2937"/>
+  <rect x="632" y="178" width="120" height="20" rx="10" fill="#9ca3af"/>
+  <rect x="632" y="218" width="82" height="20" rx="10" fill="#9ca3af"/>
+  <circle cx="770" cy="242" r="13" fill="#f59e0b"/>
+  <text x="708" y="344" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#111827">固态硬盘</text>
+</svg>
