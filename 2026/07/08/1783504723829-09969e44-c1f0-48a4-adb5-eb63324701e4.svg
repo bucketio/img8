@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430" role="img" aria-labelledby="title desc">
+  <title id="title">适合使用无痕模式的场景</title>
+  <desc id="desc">列出无痕模式适合与不适合的使用场景。</desc>
+  <rect width="900" height="430" fill="#fbfcff"/>
+  <text x="48" y="65" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#182033">什么时候适合用无痕模式？</text>
+  <g transform="translate(70 125)" font-family="Arial, sans-serif">
+    <rect x="0" y="0" width="350" height="245" rx="20" fill="#ffffff" stroke="#d9deea" stroke-width="3"/>
+    <text x="30" y="44" font-size="25" font-weight="700" fill="#24704d">适合</text>
+    <text x="34" y="88" font-size="20" fill="#334155">• 临时登录账号</text>
+    <text x="34" y="126" font-size="20" fill="#334155">• 用别人电脑查资料</text>
+    <text x="34" y="164" font-size="20" fill="#334155">• 测试未登录网页状态</text>
+    <text x="34" y="202" font-size="20" fill="#334155">• 减少本机历史记录</text>
+  </g>
+  <g transform="translate(480 125)" font-family="Arial, sans-serif">
+    <rect x="0" y="0" width="350" height="245" rx="20" fill="#ffffff" stroke="#d9deea" stroke-width="3"/>
+    <text x="30" y="44" font-size="25" font-weight="700" fill="#a33d2e">不适合</text>
+    <text x="34" y="88" font-size="20" fill="#334155">• 想让网站完全不知道你</text>
+    <text x="34" y="126" font-size="20" fill="#334155">• 想绕过公司网络记录</text>
+    <text x="34" y="164" font-size="20" fill="#334155">• 登录账号后还想匿名</text>
+    <text x="34" y="202" font-size="20" fill="#334155">• 把它当作完整安全方案</text>
+  </g>
+</svg>
