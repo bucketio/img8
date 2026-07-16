@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 670" font-family="'Microsoft YaHei','PingFang SC',sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#37474F"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="680" height="670" fill="#FFFFFF"/>
+
+  <!-- setup -->
+  <rect x="190" y="24" width="300" height="64" rx="10" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="340" y="50" text-anchor="middle" font-size="16" font-weight="bold" fill="#0D47A1">开机初始化 setup</text>
+  <text x="340" y="72" text-anchor="middle" font-size="13" fill="#1565C0">串口115200 · GPIO4输入上拉 · GPIO2输出</text>
+
+  <!-- arrow setup->loop label -->
+  <line x1="340" y1="88" x2="340" y2="108" stroke="#37474F" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="356" y="104" font-size="13" fill="#37474F">进入主循环 loop</text>
+
+  <!-- read box -->
+  <rect x="200" y="118" width="280" height="46" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="340" y="146" text-anchor="middle" font-size="14" fill="#0D47A1">读取 GPIO4 电平（digitalRead）</text>
+
+  <!-- arrow read->diamond -->
+  <line x1="340" y1="164" x2="340" y2="190" stroke="#37474F" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- diamond -->
+  <polygon points="340,190 510,264 340,338 170,264" fill="#FFF3E0" stroke="#E65100" stroke-width="2"/>
+  <text x="340" y="258" text-anchor="middle" font-size="14" font-weight="bold" fill="#E65100">GPIO4 == LOW ?</text>
+  <text x="340" y="280" text-anchor="middle" font-size="13" fill="#E65100">（按下？）</text>
+
+  <!-- branch 是 left -->
+  <path d="M170,264 L110,264 L110,402" fill="none" stroke="#37474F" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="120" y="256" font-size="13" font-weight="bold" fill="#2E7D32">是（按下）</text>
+  <rect x="30" y="402" width="260" height="64" rx="8" fill="#E8F5E9" stroke="#2E7D32" stroke-width="2"/>
+  <text x="160" y="428" text-anchor="middle" font-size="13" fill="#1B5E20">串口打印：按键被按下！</text>
+  <text x="160" y="450" text-anchor="middle" font-size="13" fill="#1B5E20">LED 输出 高（点亮）</text>
+
+  <!-- branch 否 right -->
+  <path d="M510,264 L570,264 L570,402" fill="none" stroke="#37474F" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="560" y="256" font-size="13" font-weight="bold" fill="#C62828">否（松开）</text>
+  <rect x="390" y="402" width="260" height="64" rx="8" fill="#FFEBEE" stroke="#C62828" stroke-width="2"/>
+  <text x="520" y="428" text-anchor="middle" font-size="13" fill="#B71C1C">串口打印：按键已释放</text>
+  <text x="520" y="450" text-anchor="middle" font-size="13" fill="#B71C1C">LED 输出 低（熄灭）</text>
+
+  <!-- arrows from boxes to 延时 -->
+  <path d="M160,466 L160,500 L210,500" fill="none" stroke="#37474F" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M520,466 L520,500 L470,500" fill="none" stroke="#37474F" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 延时 box -->
+  <rect x="210" y="500" width="260" height="46" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="340" y="528" text-anchor="middle" font-size="14" fill="#0D47A1">延时 100 ms</text>
+
+  <!-- loop back -->
+  <path d="M210,523 L12,523 L12,141 L200,141" fill="none" stroke="#37474F" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="20" y="335" font-size="13" font-weight="bold" fill="#37474F">循环</text>
+</svg>
