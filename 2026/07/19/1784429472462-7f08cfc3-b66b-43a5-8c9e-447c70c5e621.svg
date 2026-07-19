@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320" role="img" aria-labelledby="title desc">
+  <title id="title">弹丸匀速、目标加速运动时拦截落空</title>
+  <desc id="desc">虚线表示根据目标初始匀速状态计算出的拦截线和拦截点；目标随后加速偏离原定航迹，弹丸仍匀速飞向预测拦截点，最终未能命中。</desc>
+  <style>
+    :root {
+      --fg: #20242a;
+      --muted: #6b7280;
+      --guide: #9aa3ae;
+      --target: #1677b8;
+      --projectile: #c05a18;
+      --point: #a43b3b;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fg: #edf1f5;
+        --muted: #b4bdc8;
+        --guide: #778391;
+        --target: #6ec5f2;
+        --projectile: #f2a45f;
+        --point: #f08080;
+      }
+    }
+    text {
+      fill: var(--fg);
+      font: 500 20px system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    }
+    .note {
+      fill: var(--muted);
+      font-size: 17px;
+      font-weight: 400;
+    }
+    .planned-track, .intercept-line, .miss-line {
+      fill: none;
+      stroke: var(--guide);
+      stroke-width: 2;
+      stroke-dasharray: 7 7;
+      vector-effect: non-scaling-stroke;
+    }
+    .actual-track {
+      fill: none;
+      stroke: var(--target);
+      stroke-width: 3;
+      vector-effect: non-scaling-stroke;
+    }
+    .target-shape {
+      fill: var(--target);
+      stroke: var(--target);
+    }
+    .projectile-shape {
+      fill: var(--projectile);
+      stroke: var(--projectile);
+    }
+    .crosshair {
+      fill: none;
+      stroke: var(--point);
+      stroke-width: 2;
+      vector-effect: non-scaling-stroke;
+    }
+    .miss-label {
+      fill: var(--point);
+    }
+    .moving-projectile {
+      animation: projectile-motion 6s linear infinite;
+    }
+    .miss-pulse {
+      animation: miss-pulse 6s linear infinite;
+      transform-origin: 480px 105px;
+    }
+    @keyframes projectile-motion {
+      from { transform: translate(90px, 265px); }
+      to { transform: translate(480px, 105px); }
+    }
+    @keyframes miss-pulse {
+      0%, 88% { opacity: 0; transform: scale(.5); }
+      94% { opacity: 1; transform: scale(1.25); }
+      100% { opacity: 0; transform: scale(1.7); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .moving-target { display: none; }
+      .target-final { display: inline; }
+      .moving-projectile { animation: none; transform: translate(480px, 105px); }
+      .miss-pulse { animation: none; opacity: .65; }
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      .target-final { display: none; }
+    }
+  </style>
+
+  <defs>
+    <marker id="arrow-accelerating" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="var(--guide)"/>
+    </marker>
+    <marker id="arrow-actual" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="var(--target)"/>
+    </marker>
+  </defs>
+
+  <text x="80" y="38">目标：加速机动</text>
+  <text x="74" y="304">弹丸：匀速</text>
+
+  <path class="planned-track" d="M 80 105 H 480" marker-end="url(#arrow-accelerating)"/>
+  <text class="note" x="220" y="94">按原速度预测的航迹</text>
+
+  <path class="actual-track" d="M 80 105 C 235 105 340 82 530 40" marker-end="url(#arrow-actual)"/>
+  <text class="note" x="300" y="48">加速后的实际航迹</text>
+
+  <path class="intercept-line" d="M 90 265 L 480 105" marker-end="url(#arrow-accelerating)"/>
+  <text class="note" x="195" y="227">原定拦截线</text>
+
+  <g class="crosshair">
+    <circle cx="480" cy="105" r="11"/>
+    <path d="M 461 105 H 499 M 480 86 V 124"/>
+  </g>
+  <text class="note" x="496" y="97">预测拦截点</text>
+
+  <g class="moving-target target-shape" aria-label="加速偏离预测航迹的目标">
+    <path d="M -13 -8 L 14 0 L -13 8 L -7 0 z"/>
+    <animateMotion dur="6s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines="0.35 0 0.8 1" path="M 80 105 C 235 105 340 82 530 40" rotate="auto"/>
+  </g>
+  <g class="target-final target-shape" transform="translate(530 40) rotate(-14)" aria-label="加速后目标的最终位置">
+    <path d="M -13 -8 L 14 0 L -13 8 L -7 0 z"/>
+  </g>
+
+  <g class="moving-projectile projectile-shape" aria-label="飞向原定拦截点的弹丸">
+    <circle cx="0" cy="0" r="7"/>
+    <path d="M -20 0 H -8" fill="none" stroke-width="3"/>
+  </g>
+
+  <path class="miss-line" d="M 480 105 L 530 40"/>
+  <text class="note miss-label" x="505" y="135">未命中</text>
+  <circle class="crosshair miss-pulse" cx="480" cy="105" r="17"/>
+</svg>
