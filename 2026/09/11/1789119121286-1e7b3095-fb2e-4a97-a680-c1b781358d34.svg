@@ -1,0 +1,116 @@
+<svg width="1440" height="840" viewBox="0 0 1440 840" xmlns="http://www.w3.org/2000/svg" font-family="'Microsoft YaHei','trebuchet ms',verdana,arial,sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/>
+    </marker>
+  </defs>
+  <style>
+    .bg { fill: #ffffff; }
+    .cluster { fill: #e3effb; stroke: #2563eb; stroke-width: 1.5px; }
+    .row { fill: #ffffff; stroke: #5b8def; stroke-width: 1px; }
+    .infra { fill: #dbeafe; stroke: #2563eb; stroke-width: 1px; }
+    .edge { stroke: #2563eb; stroke-width: 2px; fill: none; }
+    .title { font-size: 20px; font-weight: bold; fill: #1d4ed8; }
+    .chead { font-size: 16px; font-weight: bold; fill: #1e3a8a; }
+    .csub { font-size: 13px; fill: #3b6db4; }
+    .rtext { font-size: 14px; fill: #1e3a8a; }
+    .label { font-size: 13px; fill: #2563eb; }
+  </style>
+
+  <rect class="bg" x="0" y="0" width="1440" height="840"/>
+
+  <!-- ===================== 前端 ===================== -->
+  <rect class="cluster" x="60" y="70" width="560" height="240" rx="8"/>
+  <text class="chead" x="80" y="100">前端 za-injure-assistant-web</text>
+  <text class="csub" x="80" y="120">UmiJS Max 4 · React 18 · Ant Design 5 · zustand</text>
+  <line x1="60" y1="130" x2="620" y2="130" stroke="#2563eb" stroke-width="1"/>
+  <rect class="row" x="80" y="142" width="520" height="42" rx="6"/>
+  <text class="rtext" x="340" y="168" text-anchor="middle">业务作业台：案件处理 · 人工复核确认</text>
+  <rect class="row" x="80" y="194" width="520" height="42" rx="6"/>
+  <text class="rtext" x="340" y="220" text-anchor="middle">Agent 管理界面：Agents / Skills / Tools / Dashboard / LiveLogs</text>
+  <rect class="row" x="80" y="246" width="520" height="42" rx="6"/>
+  <text class="rtext" x="340" y="272" text-anchor="middle">Axios 统一请求层 · SSE 流式渲染 · 多后端代理转发</text>
+
+  <!-- ===================== 执行系统 ===================== -->
+  <rect class="cluster" x="800" y="70" width="580" height="350" rx="8"/>
+  <text class="chead" x="820" y="100">Agent 执行系统 za-material-agent</text>
+  <text class="csub" x="820" y="120">Python · FastAPI · DeepAgents · LangGraph · LangChain</text>
+  <line x1="800" y1="130" x2="1380" y2="130" stroke="#2563eb" stroke-width="1"/>
+  <rect class="row" x="820" y="142" width="540" height="36" rx="6"/>
+  <text class="rtext" x="1090" y="165" text-anchor="middle">接入层：同步 Chat / 异步任务（Kafka 队列）/ SSE 流式输出</text>
+  <rect class="row" x="820" y="186" width="540" height="36" rx="6"/>
+  <text class="rtext" x="1090" y="209" text-anchor="middle">AgentService：按 agent_code 动态构建 Agent（非预编译）</text>
+  <rect class="row" x="820" y="230" width="540" height="36" rx="6"/>
+  <text class="rtext" x="1090" y="253" text-anchor="middle">热重载：Kafka 配置事件监听 + 60 秒轮询兜底</text>
+  <rect class="row" x="820" y="274" width="540" height="36" rx="6"/>
+  <text class="rtext" x="1090" y="297" text-anchor="middle">Skill 注入 · 子 Agent 编排 · 模型适配器（OpenAI 兼容 / QwQ）</text>
+  <rect class="row" x="820" y="318" width="540" height="36" rx="6"/>
+  <text class="rtext" x="1090" y="341" text-anchor="middle">langchain-mcp-adapters：MCP 协议工具调用（连接池）</text>
+
+  <!-- ===================== 配置中心 ===================== -->
+  <rect class="cluster" x="60" y="430" width="560" height="230" rx="8"/>
+  <text class="chead" x="80" y="460">Agent 配置中心 za-material-mcp</text>
+  <text class="csub" x="80" y="480">Java · Spring Boot + WebFlux · Sky 框架 · MyBatis-Plus</text>
+  <line x1="60" y1="490" x2="620" y2="490" stroke="#2563eb" stroke-width="1"/>
+  <rect class="row" x="80" y="500" width="520" height="34" rx="6"/>
+  <text class="rtext" x="340" y="522" text-anchor="middle">REST 管理接口：Agent / Skill / Tool / 执行日志 / 统计</text>
+  <rect class="row" x="80" y="542" width="520" height="34" rx="6"/>
+  <text class="rtext" x="340" y="564" text-anchor="middle">配置持久化：MySQL（Prompt / 编排 / 工具绑定 JSON 化存储）</text>
+  <rect class="row" x="80" y="584" width="520" height="34" rx="6"/>
+  <text class="rtext" x="340" y="606" text-anchor="middle">MCP 网关：SSE 传输 · 集群会话协调 · 工具动态注册</text>
+  <rect class="row" x="80" y="626" width="520" height="26" rx="6"/>
+  <text class="rtext" x="340" y="644" text-anchor="middle">Kafka 事件发布：配置变更广播（ConfigChangeEvent）</text>
+
+  <!-- ===================== 基础设施 ===================== -->
+  <rect class="infra" x="60" y="700" width="260" height="100" rx="6"/>
+  <text class="chead" x="190" y="728" text-anchor="middle">MySQL</text>
+  <text class="rtext" x="190" y="752" text-anchor="middle">Agent / Skill / Tool 配置</text>
+  <text class="rtext" x="190" y="774" text-anchor="middle">会话 / 执行日志</text>
+
+  <rect class="infra" x="360" y="700" width="320" height="100" rx="6"/>
+  <text class="chead" x="520" y="728" text-anchor="middle">Kafka</text>
+  <text class="rtext" x="520" y="752" text-anchor="middle">配置变更事件 · 异步任务队列</text>
+  <text class="rtext" x="520" y="774" text-anchor="middle">执行日志通道</text>
+
+  <rect class="infra" x="720" y="700" width="240" height="100" rx="6"/>
+  <text class="chead" x="840" y="728" text-anchor="middle">Redis</text>
+  <text class="rtext" x="840" y="756" text-anchor="middle">异步任务状态跟踪</text>
+
+  <rect class="infra" x="1000" y="700" width="380" height="100" rx="6"/>
+  <text class="chead" x="1190" y="728" text-anchor="middle">LLM 服务</text>
+  <text class="rtext" x="1190" y="756" text-anchor="middle">OpenAI 兼容 API</text>
+
+  <!-- ===================== 连线 ===================== -->
+  <!-- 前端 -> 配置中心：REST 配置管理 -->
+  <path class="edge" d="M340,310 L340,430" marker-end="url(#arrow)"/>
+  <text class="label" x="350" y="375">REST 配置管理</text>
+
+  <!-- 前端 -> 执行系统：Chat / SSE -->
+  <path class="edge" d="M620,150 L800,150" marker-end="url(#arrow)"/>
+  <text class="label" x="710" y="140" text-anchor="middle">Chat / SSE 流式调用</text>
+
+  <!-- 执行系统 -> 配置中心：拉取配置 / MCP 工具调用 -->
+  <path class="edge" d="M800,330 L700,330 L700,510 L620,510" marker-end="url(#arrow)"/>
+  <text class="label" x="692" y="410" text-anchor="end">拉取 Agent 配置</text>
+  <text class="label" x="692" y="430" text-anchor="end">MCP 工具调用（SSE）</text>
+
+  <!-- Kafka <-> 执行系统 -->
+  <path class="edge" d="M520,700 L520,672 L1100,672 L1100,420" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text class="label" x="810" y="664" text-anchor="middle">配置变更事件（热重载） · 异步任务 · 执行日志上报</text>
+
+  <!-- 配置中心 -> MySQL -->
+  <path class="edge" d="M180,660 L180,700" marker-end="url(#arrow)"/>
+  <text class="label" x="190" y="690">配置持久化 · 日志落库</text>
+
+  <!-- 配置中心 -> Kafka -->
+  <path class="edge" d="M420,660 L420,700" marker-end="url(#arrow)"/>
+  <text class="label" x="430" y="690">发布配置变更事件</text>
+
+  <!-- 执行系统 -> Redis -->
+  <path class="edge" d="M830,420 L830,700" marker-end="url(#arrow)"/>
+  <text class="label" x="838" y="560">异步任务状态</text>
+
+  <!-- 执行系统 -> LLM -->
+  <path class="edge" d="M1240,420 L1240,700" marker-end="url(#arrow)"/>
+  <text class="label" x="1248" y="560">LLM 调用</text>
+</svg>
