@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 722" width="760" height="722">
+<defs>
+  <style>
+    text { font-family: -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; }
+    .mono { font-family: 'SF Mono', Menlo, Consolas, monospace; }
+  </style>
+  <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#1D4ED8"/><stop offset="100%" stop-color="#60A5FA"/></linearGradient>
+  <linearGradient id="gOrange" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#C2410C"/><stop offset="100%" stop-color="#FB923C"/></linearGradient>
+  <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#15803D"/><stop offset="100%" stop-color="#4ADE80"/></linearGradient>
+  <linearGradient id="gPurple" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#6D28D9"/><stop offset="100%" stop-color="#A78BFA"/></linearGradient>
+  <linearGradient id="gSlate" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#475569"/><stop offset="100%" stop-color="#94A3B8"/></linearGradient>
+  <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#0F766E"/><stop offset="100%" stop-color="#2DD4BF"/></linearGradient>
+  <filter id="shadowSm"><feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#64748B" flood-opacity="0.12"/></filter>
+  <marker id="arr_gray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#94A3B8"/></marker>
+  <marker id="arr_green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#22C55E"/></marker>
+  <marker id="arr_blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#3B82F6"/></marker>
+  <marker id="arr_orange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#F97316"/></marker>
+  <marker id="arr_red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#EF4444"/></marker>
+</defs>
+<rect width="760" height="722" fill="#F8FAFC"/>
+<text x="380" y="48" font-size="26" font-weight="800" fill="#0F172A" text-anchor="middle">一个 agent,可以同时有很多会话</text>
+<text x="380" y="76" font-size="14" font-weight="400" fill="#64748B" text-anchor="middle">每个会话有自己的 key、自己的 id、自己的转录,互不串</text>
+<rect x="270" y="100" width="220" height="44" rx="12" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1" filter="url(#shadowSm)"/>
+<text class="mono" x="380" y="128" font-size="16" font-weight="700" fill="#1E40AF" text-anchor="middle">agent: main</text>
+<line x1="380" y1="146" x2="380" y2="170" stroke="#94A3B8" stroke-width="2" marker-end="url(#arr_gray)"/>
+<rect x="40" y="176" width="680" height="70" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#shadowSm)"/>
+<rect x="56" y="197" width="290" height="28" rx="14" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+<text class="mono" x="201" y="216" font-size="12.5" font-weight="700" fill="#1E40AF" text-anchor="middle">agent:main:main</text>
+<text x="364" y="207" font-size="13" font-weight="700" fill="#0F172A" text-anchor="start">所有私聊,默认汇在这里</text>
+<text x="364" y="228" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">控制台里的 Home 页</text>
+<rect x="600" y="197" width="104" height="28" rx="14" fill="#FFF7ED" stroke="#FDBA74" stroke-width="1"/>
+<text x="652.0" y="215.5" font-size="12" font-weight="400" fill="#9A3412" text-anchor="middle">id:各自一个</text>
+<rect x="40" y="256" width="680" height="70" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#shadowSm)"/>
+<rect x="56" y="277" width="290" height="28" rx="14" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+<text class="mono" x="201" y="296" font-size="12.5" font-weight="700" fill="#1E40AF" text-anchor="middle">agent:main:dashboard:&lt;uuid&gt;</text>
+<text x="364" y="287" font-size="13" font-weight="700" fill="#0F172A" text-anchor="start">控制台里点"新建 thread"</text>
+<text x="364" y="308" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">无痕 thread 的 key 带 incognito-</text>
+<rect x="600" y="277" width="104" height="28" rx="14" fill="#FFF7ED" stroke="#FDBA74" stroke-width="1"/>
+<text x="652.0" y="295.5" font-size="12" font-weight="400" fill="#9A3412" text-anchor="middle">id:各自一个</text>
+<rect x="40" y="336" width="680" height="70" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#shadowSm)"/>
+<rect x="56" y="357" width="290" height="28" rx="14" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+<text class="mono" x="201" y="376" font-size="12.5" font-weight="700" fill="#1E40AF" text-anchor="middle">agent:main:telegram:group:&lt;id&gt;</text>
+<text x="364" y="367" font-size="13" font-weight="700" fill="#0F172A" text-anchor="start">一个 Telegram 群</text>
+<text x="364" y="388" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">每个群各自一个会话</text>
+<rect x="600" y="357" width="104" height="28" rx="14" fill="#FFF7ED" stroke="#FDBA74" stroke-width="1"/>
+<text x="652.0" y="375.5" font-size="12" font-weight="400" fill="#9A3412" text-anchor="middle">id:各自一个</text>
+<rect x="40" y="416" width="680" height="70" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#shadowSm)"/>
+<rect x="56" y="437" width="290" height="28" rx="14" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+<text class="mono" x="201" y="456" font-size="12.5" font-weight="700" fill="#1E40AF" text-anchor="middle">cron:&lt;job.id&gt;</text>
+<text x="364" y="447" font-size="13" font-weight="700" fill="#0F172A" text-anchor="start">一个定时任务</text>
+<text x="364" y="468" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">每次运行是一个新会话</text>
+<rect x="600" y="437" width="104" height="28" rx="14" fill="#FFF7ED" stroke="#FDBA74" stroke-width="1"/>
+<text x="652.0" y="455.5" font-size="12" font-weight="400" fill="#9A3412" text-anchor="middle">id:各自一个</text>
+<rect x="40" y="496" width="680" height="70" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#shadowSm)"/>
+<rect x="56" y="517" width="290" height="28" rx="14" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+<text class="mono" x="201" y="536" font-size="12.5" font-weight="700" fill="#1E40AF" text-anchor="middle">hook:&lt;uuid&gt;</text>
+<text x="364" y="527" font-size="13" font-weight="700" fill="#0F172A" text-anchor="start">一个 webhook</text>
+<text x="364" y="548" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">每个 hook 各自隔离</text>
+<rect x="600" y="517" width="104" height="28" rx="14" fill="#FFF7ED" stroke="#FDBA74" stroke-width="1"/>
+<text x="652.0" y="535.5" font-size="12" font-weight="400" fill="#9A3412" text-anchor="middle">id:各自一个</text>
+<rect x="40" y="588" width="680" height="110" rx="12" fill="#0F172A" stroke="#0F172A" stroke-width="1" filter="url(#shadowSm)"/>
+<text x="64" y="618" font-size="14" font-weight="700" fill="#FBBF24" text-anchor="start">所以</text>
+<text x="64" y="646" font-size="13" font-weight="400" fill="#E2E8F0" text-anchor="start">每一行都有自己的转录,谁也看不见谁的上下文。</text>
+<text x="64" y="668" font-size="13" font-weight="400" fill="#E2E8F0" text-anchor="start">想让它们互相知道,要靠后面几节讲的那几样东西。</text>
+</svg>
