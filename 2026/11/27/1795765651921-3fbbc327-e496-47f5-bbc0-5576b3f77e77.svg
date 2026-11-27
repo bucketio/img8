@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="560" viewBox="0 0 1080 560" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, Source Han Sans SC, sans-serif">
+  <defs>
+    <linearGradient id="cardD" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1224"/><stop offset="1" stop-color="#070B18"/>
+    </linearGradient>
+    <linearGradient id="barD" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#3B82F6" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111C3B"/><stop offset="1" stop-color="#0B1226"/>
+    </linearGradient>
+    <filter id="glD" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="g5" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#FFFFFF" stroke-opacity="0.04"/>
+    </pattern>
+  </defs>
+
+  <rect width="1080" height="560" rx="22" fill="url(#cardD)"/>
+  <rect width="1080" height="560" rx="22" fill="url(#g5)"/>
+  <rect x="0" y="0" width="1080" height="6" rx="3" fill="url(#barD)"/>
+
+  <g>
+    <rect x="44" y="40" rx="6" width="6" height="34" fill="#22D3EE" filter="url(#glD)"/>
+    <text x="66" y="66" font-size="30" fill="#FFFFFF" font-weight="700">图 2｜四代速率的口径对照</text>
+    <text x="66" y="102" font-size="18" fill="#8FA6C8">线路速率 ≠ 净荷，合计 ≠ 单用户</text>
+  </g>
+
+  <g transform="translate(0,16)">
+    <g filter="url(#glD)">
+      <rect x="70"  y="150" width="440" height="150" rx="18" fill="url(#tile)" stroke="#22D3EE" stroke-width="2"/>
+      <rect x="570" y="150" width="440" height="150" rx="18" fill="url(#tile)" stroke="#22D3EE" stroke-width="2"/>
+      <rect x="70"  y="322" width="440" height="150" rx="18" fill="url(#tile)" stroke="#3B82F6" stroke-opacity="0.65" stroke-width="2"/>
+      <rect x="570" y="322" width="440" height="150" rx="18" fill="url(#tile)" stroke="#3B82F6" stroke-opacity="0.65" stroke-width="2"/>
+    </g>
+    <g fill="#22D3EE" font-size="44" font-weight="800">
+      <text x="104" y="216">2.488 G</text>
+      <text x="604" y="216">1.0 G</text>
+      <text x="104" y="388">40 G</text>
+      <text x="604" y="388">49.7664 G</text>
+    </g>
+    <g fill="#FFFFFF" font-size="21" font-weight="700">
+      <text x="104" y="252">GPON 下行线路速率</text>
+      <text x="604" y="252">EPON 数据速率</text>
+      <text x="104" y="424">NG-PON2 合计容量</text>
+      <text x="604" y="424">50G-PON 下行线路速率</text>
+    </g>
+    <g fill="#8FA6C8" font-size="16">
+      <text x="104" y="282">G.984.x，含封装与 FEC 开销</text>
+      <text x="604" y="282">802.3ah，线路速率 1.25 G</text>
+      <text x="104" y="454">G.989，4 对 ×10G，单 ONU 用一对</text>
+      <text x="604" y="454">G.9804.3，上行 24.8832 或 49.7664 G</text>
+    </g>
+  </g>
+
+  <g>
+    <line x1="44" y1="506" x2="1036" y2="506" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <text x="44" y="540" font-size="19" fill="#7E93B8">图注：均为标准标称值，用户净荷低于线路速率 · 依据 G.984.3、802.3ah-2004、G.989、G.9804.3</text>
+    <text x="1036" y="540" font-size="15" fill="#4E5F7E" text-anchor="end">PON 知识图谱</text>
+  </g>
+</svg>
