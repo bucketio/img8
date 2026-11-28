@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1160" viewBox="0 0 900 1160">
+<rect x="0" y="0" width="900" height="1160" rx="0" fill="#FBFAF6"/>
+<text x="48" y="80" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="49" fill="#183642" font-weight="700" text-anchor="start">发现失败后，怎样继续？</text>
+<text x="48" y="143" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="34" fill="#5C7178" font-weight="400" text-anchor="start">过程示意 · 12 秒循环，不代表实际耗时</text>
+<rect x="160" y="195" width="692" height="144" rx="20" fill="#FFFFFF" stroke="#DCE4DF" stroke-width="3"/>
+<text x="197" y="249" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="41" fill="#183642" font-weight="650" text-anchor="start">执行</text>
+<text x="197" y="306" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="34" fill="#5C7178" font-weight="400" text-anchor="start">生成订单导出文件</text>
+<rect x="160" y="417" width="692" height="144" rx="20" fill="#FFFFFF" stroke="#DCE4DF" stroke-width="3"/>
+<text x="197" y="471" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="41" fill="#183642" font-weight="650" text-anchor="start">检查</text>
+<text x="197" y="528" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="34" fill="#5C7178" font-weight="400" text-anchor="start">核对浏览器的下载结果</text>
+<rect x="160" y="639" width="692" height="144" rx="20" fill="#FFFFFF" stroke="#DCE4DF" stroke-width="3"/>
+<text x="197" y="693" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="41" fill="#183642" font-weight="650" text-anchor="start">修复</text>
+<text x="197" y="750" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="34" fill="#5C7178" font-weight="400" text-anchor="start">定位登录态问题并修改</text>
+<rect x="160" y="899" width="692" height="144" rx="20" fill="#FFFFFF" stroke="#DCE4DF" stroke-width="3"/>
+<text x="197" y="953" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="41" fill="#183642" font-weight="650" text-anchor="start">保存进度</text>
+<text x="197" y="1010" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="34" fill="#5C7178" font-weight="400" text-anchor="start">通过验收后，记录证据与版本</text>
+<path d="M506,354 L506,399" fill="none" stroke="#087F78" stroke-width="4" stroke-linecap="round"/>
+<path d="M496,387 L506,399" fill="none" stroke="#087F78" stroke-width="4" stroke-linecap="round"/>
+<path d="M516,387 L506,399" fill="none" stroke="#087F78" stroke-width="4" stroke-linecap="round"/>
+<path d="M506,575 L506,620" fill="none" stroke="#BD622C" stroke-width="4" stroke-linecap="round"/>
+<path d="M496,608 L506,620" fill="none" stroke="#BD622C" stroke-width="4" stroke-linecap="round"/>
+<path d="M516,608 L506,620" fill="none" stroke="#BD622C" stroke-width="4" stroke-linecap="round"/>
+<text x="544" y="607" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="31" fill="#BD622C" font-weight="400" text-anchor="start">失败后修复</text>
+<path d="M160,712 L75,712" fill="none" stroke="#BD622C" stroke-width="4" stroke-linecap="round"/>
+<path d="M75,712 L75,490" fill="none" stroke="#BD622C" stroke-width="4" stroke-linecap="round"/>
+<path d="M75,490 L143,490" fill="none" stroke="#BD622C" stroke-width="4" stroke-linecap="round"/>
+<path d="M131,480 L143,490" fill="none" stroke="#BD622C" stroke-width="4" stroke-linecap="round"/>
+<path d="M131,500 L143,490" fill="none" stroke="#BD622C" stroke-width="4" stroke-linecap="round"/>
+<text x="25" y="579" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="32" fill="#BD622C" font-weight="400" text-anchor="start">重</text>
+<text x="25" y="644" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="32" fill="#BD622C" font-weight="400" text-anchor="start">测</text>
+<path d="M852,489 L878,489" fill="none" stroke="#087F78" stroke-width="4" stroke-linecap="round"/>
+<path d="M878,489 L878,970" fill="none" stroke="#087F78" stroke-width="4" stroke-linecap="round"/>
+<path d="M878,970 L855,970" fill="none" stroke="#087F78" stroke-width="4" stroke-linecap="round"/>
+<path d="M865,960 L855,970" fill="none" stroke="#087F78" stroke-width="4" stroke-linecap="round"/>
+<path d="M865,980 L855,970" fill="none" stroke="#087F78" stroke-width="4" stroke-linecap="round"/>
+<rect x="227" y="819" width="558" height="54" rx="10" fill="#E4F1EC"/>
+<text x="506" y="857" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="33" fill="#087F78" font-weight="600" text-anchor="middle">检查通过，才可保存进度</text>
+<rect id="lh-run-active" x="160" y="195" width="692" height="144" rx="20" fill="none" stroke="#087F78" stroke-width="7" opacity="0"><animate attributeName="opacity" values="1;0;0;0;0;0;1" keyTimes="0;0.16;0.33;0.50;0.67;0.90;1" calcMode="discrete" dur="12s" begin="0s" repeatCount="indefinite"/></rect>
+<rect id="lh-check-active" x="160" y="417" width="692" height="144" rx="20" fill="none" stroke="#087F78" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;1;0;1;0;0;0" keyTimes="0;0.16;0.33;0.50;0.67;0.90;1" calcMode="discrete" dur="12s" begin="0s" repeatCount="indefinite"/></rect>
+<rect id="lh-repair-active" x="160" y="639" width="692" height="144" rx="20" fill="none" stroke="#BD622C" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;1;0;0;0;0" keyTimes="0;0.16;0.33;0.50;0.67;0.90;1" calcMode="discrete" dur="12s" begin="0s" repeatCount="indefinite"/></rect>
+<rect id="lh-save-active" x="160" y="899" width="692" height="144" rx="20" fill="none" stroke="#087F78" stroke-width="7" opacity="0"><animate attributeName="opacity" values="0;0;0;0;1;1;0" keyTimes="0;0.16;0.33;0.50;0.67;0.90;1" calcMode="discrete" dur="12s" begin="0s" repeatCount="indefinite"/></rect>
+<g id="lh-failed" opacity="0"><animate attributeName="opacity" values="0;1;0;0;0;0;0" keyTimes="0;0.16;0.33;0.50;0.67;0.90;1" calcMode="discrete" dur="12s" begin="0s" repeatCount="indefinite"/>
+<rect x="538" y="436" width="265" height="48" rx="10" fill="#FFF0E2"/>
+<text x="670.5" y="471" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="31" fill="#BD622C" font-weight="650" text-anchor="middle">下载失败</text>
+</g>
+<g id="lh-passed" opacity="0"><animate attributeName="opacity" values="0;0;0;1;1;1;0" keyTimes="0;0.16;0.33;0.50;0.67;0.90;1" calcMode="discrete" dur="12s" begin="0s" repeatCount="indefinite"/>
+<rect x="538" y="436" width="265" height="48" rx="10" fill="#E4F1EC"/>
+<text x="670.5" y="471" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="31" fill="#087F78" font-weight="650" text-anchor="middle">重测通过</text>
+</g>
+<text x="450" y="1110" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="39" fill="#183642" font-weight="600" text-anchor="middle">完成声明，要跟在验收证据之后。</text>
+</svg>
